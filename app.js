@@ -20,13 +20,13 @@ cat.href = CONFIG.catalogo;
 
 // Botón WhatsApp del hero
 const cta = document.getElementById("ctaWhatsapp");
-cta.href = makeWhatsAppLink(`Hola 👋 Estoy en ${CONFIG.ciudad} y quiero información sobre tus packs.`);
+cta.href = makeWhatsAppLink(`Hola Estoy en ${CONFIG.ciudad} y quiero información sobre tus packs.`);
 
 // Botones "Consultar precio"
 document.querySelectorAll(".js-quote").forEach((btn) => {
   btn.addEventListener("click", () => {
     const item = btn.dataset.pack || "un producto";
-    const msg = `Hola 👋 Quiero consultar por: ${item}. ¿Me puedes pasar precio y cómo se usa?`;
+    const msg = `Hola Quiero consultar por: ${item}. ¿Me puedes pasar precio y cómo se usa?`;
     window.open(makeWhatsAppLink(msg), "_blank", "noreferrer");
   });
 });
@@ -62,7 +62,7 @@ form.addEventListener("submit", (e) => {
   const message = data.get("message");
 
   const msg =
-`Hola 👋 Soy ${name}.
+`Hola Soy ${name}.
 Mi objetivo: ${goal}.
 Mensaje: ${message}`;
 
@@ -80,5 +80,6 @@ function makeWhatsAppLink(text) {
 // Botón WhatsApp del perfil
 const btnPerfil = document.getElementById("btnWhatsappPerfil");
 if (btnPerfil) {
-  btnPerfil.href = makeWhatsAppLink("Hola 👋 Vi tu página y quiero información sobre los packs.");
+  btnPerfil.href = makeWhatsAppLink("Hola Vi tu página y quiero información sobre los packs.");
 }
+
