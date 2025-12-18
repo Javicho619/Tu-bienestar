@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bienestar y Nutrición | Asesoría Herbalife</title>
+  <meta name="description" content="Asesoría de nutrición y bienestar. Catálogo, packs, atención por WhatsApp y seguimiento." />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio">
+        <img class="brand__logo" src="assets/logo.png" alt="Logo" />
+        <div class="brand__text">
+          <strong>Tu Bienestar</strong>
+          <span>Asesoría • Hábitos • Nutrición</span>
+        </div>
+      </a>
+
+      <nav class="topbar__nav" aria-label="Navegación principal">
+        <a href="#packs">Packs</a>
+        <a href="#productos">Productos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto" class="btn btn--primary">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero__bg" src="assets/hero.png" alt="" />
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <p class="badge">Atención en Chupaca-Pilcomayo-Huancayo</p>
+        <h1>Asesoría personalizada para tus objetivos</h1>
+        <p class="lead">
+          Te ayudo a armar un plan práctico según tu rutina: energía, hábitos, control de porciones,
+          y packs de apoyo nutricional. <span class="muted">Resultados pueden variar.</span>
+        </p>
+
+        <div class="hero__cta">
+          <!-- Cambia el número -->
+          <a class="btn btn--primary" id="ctaWhatsapp" href="#" rel="noreferrer">Hablar por WhatsApp</a>
+          <a class="btn btn--ghost" href="#packs">Ver packs</a>
+        </div>
+
+        <div class="hero__mini">
+          <div class="mini">
+            <strong>Evaluación rápida</strong>
+            <span>3 preguntas y te recomiendo opciones</span>
+          </div>
+          <div class="mini">
+            <strong>Entrega / coordinación</strong>
+            <span>Chupaca y Huancayo (según disponibilidad)</span>
+          </div>
+          <div class="mini">
+            <strong>Seguimiento</strong>
+            <span>Tips semanales y guía de hábitos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKS -->
+    <section id="packs" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Packs recomendados</h2>
+          <p>Elige el pack según tu meta. Yo te ayudo a ajustar cantidades y horarios.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card card--wide">
+            <div class="card__top">
+              <h3>Pack Inicio</h3>
+              <span class="pill">Ideal para empezar</span>
+            </div>
+            <p>Para mejorar hábitos: desayuno práctico + hidratación + guía básica.</p>
+            <ul class="list">
+              <li>✔ Desayuno/colación fácil</li>
+              <li>✔ Recomendación de rutina diaria</li>
+              <li>✔ Tips de hidratación</li>
+            </ul>
+            <div class="card__bottom">
+              <button class="btn btn--primary js-quote" data-pack="Pack Inicio">Consultar precio</button>
+              <span class="muted small">*Precios varían por producto/stock</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3>Pack Control</h3>
+              <span class="pill">Rutina + constancia</span>
+            </div>
+            <p>Enfocado en estructura de comidas y control de antojos.</p>
+            <button class="btn js-quote" data-pack="Pack Control">Consultar precio</button>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3>Pack Energía</h3>
+              <span class="pill">Para días intensos</span>
+            </div>
+            <p>Para apoyar energía y enfoque (según tu tolerancia).</p>
+            <button class="btn js-quote" data-pack="Pack Energía">Consultar precio</button>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3>Pack Deportista</h3>
+              <span class="pill">Actividad física</span>
+            </div>
+            <p>Apoyo para entrenamiento: proteína + recuperación + hábitos.</p>
+            <button class="btn js-quote" data-pack="Pack Deportista">Consultar precio</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Productos</h2>
+          <p>Selecciona una categoría. (Puedes editar nombres y descripciones.)</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filtro de productos">
+          <button class="chip is-active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="batidos">Batidos</button>
+          <button class="chip" data-filter="proteina">Proteína</button>
+          <button class="chip" data-filter="te">Tés / Bebidas</button>
+          <button class="chip" data-filter="suplementos">Suplementos</button>
+        </div>
+
+        <div class="grid products" id="productGrid">
+          <article class="card product" data-cat="batidos">
+            <h3>Batido Nutricional</h3>
+            <p>Sabor a elección. Útil para desayuno/merienda práctica.</p>
+            <button class="btn js-quote" data-pack="Batido Nutricional">Consultar</button>
+          </article>
+
+          <article class="card product" data-cat="proteina">
+            <h3>Proteína</h3>
+            <p>Apoyo para colaciones y objetivos de entrenamiento.</p>
+            <button class="btn js-quote" data-pack="Proteína">Consultar</button>
+          </article>
+
+          <article class="card product" data-cat="te">
+            <h3>Bebida de Té</h3>
+            <p>Opción para acompañar la rutina diaria (según preferencia).</p>
+            <button class="btn js-quote" data-pack="Bebida de Té">Consultar</button>
+          </article>
+
+          <article class="card product" data-cat="suplementos">
+            <h3>Vitaminas / Suplementos</h3>
+            <p>Se recomienda según tu objetivo y rutina.</p>
+            <button class="btn js-quote" data-pack="Vitaminas / Suplementos">Consultar</button>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Importante:</strong> Si estás embarazada, lactando o tienes una condición médica,
+          consulta con un profesional de salud antes de consumir suplementos.
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Testimonios</h2>
+          <p>Puedes reemplazar estos textos por testimonios reales (sin prometer resultados).</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <p class="quote">“Me ayudó a ordenar mis comidas y mantener constancia.”</p>
+            <p class="muted small">— Cliente, Zulma Jimenez</p>
+          </article>
+
+          <article class="card">
+            <p class="quote">“Me gustó el seguimiento semanal, fue clave para mis hábitos.”</p>
+            <p class="muted small">— Cliente, Silvio Gutarra</p>
+          </article>
+
+          <article class="card">
+            <p class="quote">“Los packs me facilitaron el desayuno cuando no tenía tiempo.”</p>
+            <p class="muted small">— Cliente, Javier Aliaga</p>
+          </article>
+        </div>
+
+        <p class="muted small" style="margin-top:10px;">
+          *Los testimonios reflejan experiencias individuales. Resultados pueden variar.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contacto</h2>
+          <p>Respondo más rápido por WhatsApp.</p>
+        </div>
+
+        <div class="contact">
+          <div class="card contact__card">
+            <h3>Escríbeme</h3>
+            <p>Cuéntame tu objetivo (energía, hábitos, deporte, etc.) y tu rutina diaria.</p>
+
+            <form class="form" id="contactForm">
+              <div class="form__row">
+                <label>Nombre</label>
+                <input name="name" placeholder="Tu nombre" required />
+              </div>
+
+              <div class="form__row">
+                <label>Objetivo</label>
+                <select name="goal" required>
+                  <option value="" selected disabled>Selecciona…</option>
+                  <option>Mejorar hábitos</option>
+                  <option>Control de porciones</option>
+                  <option>Más energía</option>
+                  <option>Apoyo para entrenamiento</option>
+                </select>
+              </div>
+
+              <div class="form__row">
+                <label>Mensaje</label>
+                <textarea name="message" rows="4" placeholder="Ej: trabajo todo el día, quiero un plan simple…" required></textarea>
+              </div>
+
+              <button class="btn btn--primary" type="submit">Enviar a WhatsApp</button>
+              <p class="form__hint" id="formHint" aria-live="polite"></p>
+            </form>
+          </div>
+
+		<div class="card contact__card">
+		  <h3>Quién te atiende</h3>
+
+		  <div class="profile">
+			<img src="assets/foto-perfil.png" alt="Asesora de bienestar" class="profile__img">
+
+			<div class="profile__info">
+			  <strong>Nancy Orcón</strong>
+			  <span>Asesoría en nutrición y hábitos</span>
+
+			  <a class="btn btn--primary profile__btn" id="btnWhatsappPerfil" href="#" target="_blank">
+				Hablar por WhatsApp
+			  </a>
+			</div>
+		  </div>
+
+		  <div class="links">
+			<a class="link" id="linkFacebook" href="#" target="_blank">Facebook</a>
+			<a class="link" id="linkCatalogo" href="#" target="_blank">Catálogo (PDF)</a>
+			<a class="link" id="linkTiktok" href="#" target="_blank">TikTok</a>
+		  </div>
+		</div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span
