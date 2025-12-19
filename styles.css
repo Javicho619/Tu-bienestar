@@ -256,3 +256,14 @@ input:focus, textarea:focus, select:focus{ border-color: rgba(40,255,170,0.55); 
   margin-top:6px;
   width: fit-content;
 }
+/* Texto preto no HERO */
+.hero,
+.hero h1,
+.hero p,
+.hero .lead,
+.hero .mini,
+.hero .mini strong,
+.hero .mini span,
+.hero .badge{
+  color: #000;
+}
